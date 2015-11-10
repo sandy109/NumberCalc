@@ -1,0 +1,23 @@
+{
+    "version":"1.2",
+    "name": "Number Calc",
+    "description": "This apps can convert your number to other different number system.",
+    "launch_path": "/Home.html",
+    "icons": {
+        "16": "/logo/_16.png",
+        "24": "/logo/_24.png",
+        "32": "/logo/_32.png",
+        "48": "/logo/_48.png",
+        "64": "/logo/_64.png",
+        "72": "/logo/_72.png",
+        "96": "/logo/_96.png",
+        "128": "/logo/_128.png",
+        "256": "/logo/_256.png",
+        "512": "/logo/_512.png"
+    },
+	  "developer": {
+        "name": "Tirth Patel",
+        "url": "http://www.github.com/crazyTyson"
+    },
+    "default_locale": "en"
+}

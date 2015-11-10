@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		#header_nav {
+			width: 100%;
+			height: 47px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index:10;
+			font-size: 14px;
+		}
+		.ab {
+			width: 100%;
+			z-index: 5;
+			overflow: auto;
+		}
+		.input-field input[type=text]:focus {
+      border-bottom: 1px solid #ff1744;
+      box-shadow: 0 1px 0 0 #ff1744;
+   	}
+	  .input-field label {
+      color: #ff1744;
+    }
+    .input-field input[type=text]:focus + label {
+      color: #ff1744;
+    }
+		#foot {
+		 width: 100%;
+		 height: 2%;
+		 position: fixed;
+		}
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+		main {
+		  flex: 1 0 auto;
+		}
+		#backButton {
+			 height: 35px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="materialize/jquery.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<header></header>
+	<main>
+		<script type = "text/javascript" src="js/oct2All.js"></script>
+		<nav class="red accent-3">
+      <div class="nav-wrapper">
+				<a href="#" data-activates="mobile-demo" class="button-collapse">
+					<li>&nbsp;&nbsp;&nbsp;<img src="left15.png" /></li>
+					<ul class="left hide-on-med-and-down">
+						<li><a href="Choice.html"><img src="left15.png" /></a></li>
+            <li><a href="bin2All.html">Binary Conversions</a></li>
+						<li class="active"><a href="oct2All.html">Octal Conversions</a></li>
+  					<li><a href="dec2All.html">Decimal Conversions</a></li>
+  					<li><a href="hex2All.html">Hexa-Decimal Conversions</a></li>
+					</ul>
+				</a>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="Choice.html">Choice</a></li>
+					<li><a href="Home.html">Home</a></li>
+          <li><hr /></li>
+          <li><a href="bin2All.html">Binary Conversions</a></li>
+          <li class="active"><a href="oct2All.html">Octal Conversions</a></li>
+					<li><a href="dec2All.html">Decimal Conversions</a></li>
+					<li><a href="hex2All.html">Hexa-Decimal Conversions</a></li>
+					<li><hr /></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="ab">
+			<div class="container">
+				<center>
+					<form>
+						<div class="row">
+							<br />
+							<div class="input-field col s12">
+								<input type="text" name="oct" id="oct" maxlength="15" onkeyup="oct2All()" />
+								<label for="deci">Enter a octal number</label>
+							</div>
+						</div>
+					</form>
+				</center>
+				<!--<button class="btn blue lighten-1 waves-effect waves-blue" type="button" value="Convert!" onclick="dec2bin()">Convert</button>-->
+				<br />
+				<center><div id="error"></div></center><br />
+				<center><div id="result"></div></center><br />
+				<center><div id="result2"></div></center><br />
+				<center><div id="result3"></div></center><br />
+				<br />
+			</div>
+		</div>
+	</main>
+	 <div class="footer-copyright red accent-3">
+		<div class="container" id="backButton">
+		  <a href="Choice.html"><center class="white-text" style="margin-top: 8px;">Back</center></a>
+		</div>
+	 </div>
+</body>
+</html>

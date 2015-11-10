@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style type="text/css">
+    #header_nav {
+      width: 100%;
+      height: 58px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index:10;
+      font-size: 20px;
+    }
+    .ab{
+      width: 100%;
+      z-index: 5;
+      overflow: auto;
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+    #foot {
+		 width: 100%;
+		 height: 2%;
+		 position: fixed;
+		}
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+		main {
+		  flex: 1 0 auto;
+		}
+		#backButton {
+			height: 35px;
+		}
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="materialize/jquery.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
+  <header></header>
+  <main>
+    <div class="navbar-fixed">
+      <nav class="light-blue darken-4">
+  		  <div class="nav-wrapper">
+          <center style="font-size: 20px; color: #FFF;">
+            Number System Converter Home
+          </center>
+        </div>
+      </nav>
+   </div>
+    <div class="ab">
+      <div class="container">
+        <center>
+          <br />
+          <a href="Choice.html"><button class="btn light-blue darken-4 waves-effect waves-teal" type="button">Take A Tour!</button></a>
+          <br /><br /><br />
+          <!--<a href="Home.html"><img src="logo/Capture.PNG" ismap /></a>-->
+          <img src="logo/Capture.PNG" usemap="#square" />
+          <map id="square" name="square">
+            <area shape="rect" coords="0,1,100,100" href="dec2All.html">
+            <area shape="rect" coords="100,0,199,100" href="bin2All.html">
+            <area shape="rect" coords="0,100,99,198" href="oct2All.html">
+            <area shape="rect" coords="100,100,199,198" href="hex2All.html">
+          </map>
+          <!--Made with ♥ By TP-->
+        </center>
+      </div>
+    </div>
+  </main>
+  <div class="footer-copyright light-blue darken-4">
+   <div class="container" id="backButton">
+     <a href="about.html"><center class="white-text" style="margin-top: 8px;">Made with &hearts; by TP (crazyTyson)</center></a>
+   </div>
+  </div>
+</body>
+</html>
